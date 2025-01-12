@@ -2,11 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --dark-grey: #363636;
+  --light-blue: #6adbd8;
+  --light-grey: #d9d9d9;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  color: var(--light-grey);
+  background-color: var(--dark-grey);
+  /* @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
-  }
+  } */
 }
+
+.logo {
+  color: var(--light-blue);
+  /* background-color: var(--dark-grey); */
+}
+
+.logo span {
+  color: var(--light-grey)
+}
+
+

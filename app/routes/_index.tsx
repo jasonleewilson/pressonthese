@@ -10,13 +10,24 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className='flex h-screen items-center justify-center'>
-      <div className='flex flex-col items-center gap-16'>
-        <header className='flex flex-col items-center gap-9'>
-          <h1 className='leading text-2xl font-bold text-gray-800 dark:text-gray-100'>
-            Coming Soon... <span className='sr-only'>PressOnThese.com</span>
-          </h1>
-          <h2>PressOnThese.com</h2>
+      <div className='flex flex-col items-center'>
+        <header className='flex flex-col items-center'>
+          <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
+          {/* <h2>PressOnThese.com</h2> */}
         </header>
+
+        <div className='w-auto h-auto'>
+          <h1 className='w-auto h-auto'>
+            <span className="text-2xl font-normal font-['Arial'] logo">
+              PressOn
+              <span className="text-2xl font-normal font-['Arial']">
+                These.com
+              </span>
+            </span>
+          </h1>
+          <h2 className='text-center'>Coming Soon...</h2>
+        </div>
+
         {/* <nav className='flex flex-col items-center justify-center gap-4 rounded-3xl border border-gray-200 p-6 dark:border-gray-700'>
           <p className='leading-6 text-gray-700 dark:text-gray-200'>
             What&apos;s next?
