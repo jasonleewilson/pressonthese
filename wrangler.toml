@@ -77,8 +77,8 @@ pages_build_output_dir = "./build/client"
 
 ######## PRODUCTION environment config ########
 
-# [env.production.vars]
-# API_KEY = "abc123"
+[env.production.vars]
+API_KEY = "7c11280e8000cdc9a159fb07953e0dc40e695"
 
 # [[env.production.kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
