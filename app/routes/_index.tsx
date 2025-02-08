@@ -77,13 +77,6 @@ export default function Index() {
                 </Link>
               </li>
             </ul>
-            {/* <div>
-              <img
-                alt=''
-                src={"/logo-PressOnThese.svg"}
-                // onError={(this.src = "https://picsum.photos/200")}
-              />
-            </div> */}
           </div>
         </div>
       </div>
