@@ -20,7 +20,6 @@ export default function Index() {
       <div className='flex flex-col items-center'>
         <header className='flex flex-col items-center'>
           <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
-          {/* <h2>PressOnThese.com</h2> */}
         </header>
 
         <div className='w-auto text-center'>
