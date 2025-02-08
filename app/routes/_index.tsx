@@ -67,16 +67,15 @@ export default function Index() {
                   <FaTiktok />
                 </Link>
               </li>
-              <li className='p-4'>
+              {/* <li className='p-4'>
                 <Link
                   to='https://youtube.com/@pressonthese/'
                   target='_blank'
                   rel='noreferrer'
                 >
                   <FaYoutube />
-                  <FaYoutube />
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
