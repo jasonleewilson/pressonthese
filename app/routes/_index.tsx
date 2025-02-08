@@ -1,4 +1,11 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
+import { Link } from "@remix-run/react";
+
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,45 +16,77 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className='flex h-screen items-center justify-center'>
+    <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
       <div className='flex flex-col items-center'>
         <header className='flex flex-col items-center'>
           <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
           {/* <h2>PressOnThese.com</h2> */}
         </header>
 
-        <div className='w-auto h-auto'>
-          <h1 className='w-auto h-auto'>
-            <span className="text-2xl font-normal font-['Arial'] logo">
-              PressOn
-              <span className="text-2xl font-normal font-['Arial']">
-                These.com
-              </span>
-            </span>
-          </h1>
-          <h2 className='text-center'>Coming Soon...</h2>
-        </div>
-
-        {/* <nav className='flex flex-col items-center justify-center gap-4 rounded-3xl border border-gray-200 p-6 dark:border-gray-700'>
-          <p className='leading-6 text-gray-700 dark:text-gray-200'>
-            What&apos;s next?
-          </p>
-          <ul>
-            {resources.map(({ href, text, icon }) => (
-              <li key={href}>
-                <a
-                  className='group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500'
-                  href={href}
+        <div className='w-auto text-center'>
+          <img
+            alt='PressOnThese.com logo'
+            src={"/logo-PressOnThese.svg"}
+            // onError={(this.src = "https://picsum.photos/200")}
+          />
+          <h2 className='text-center text-black'>Coming Soon...</h2>
+          <div className='mt-4'>
+            <ul className='flex flex-wrap items-center justify-center text-3xl m-8 text-gray-900 dark:text-black'>
+              <li className='p-4'>
+                <Link
+                  to='https://www.facebook.com/pressonthese/'
                   target='_blank'
                   rel='noreferrer'
                 >
-                  {icon}
-                  {text}
-                </a>
+                  <FaFacebookF />
+                </Link>
               </li>
-            ))}
-          </ul>
-        </nav> */}
+              <li className='p-4'>
+                <Link
+                  to='https://x.com/pressonthese/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaXTwitter />
+                </Link>
+              </li>
+              <li className='p-4'>
+                <Link
+                  to='https://www.instagram.com/pressonthese/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaInstagram />
+                </Link>
+              </li>
+              <li className='p-4'>
+                <Link
+                  to='https://www.tiktok.com/@pressonthese/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaTiktok />
+                </Link>
+              </li>
+              <li className='p-4'>
+                <Link
+                  to='https://youtube.com/@pressonthese/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaYoutube />
+                </Link>
+              </li>
+            </ul>
+            {/* <div>
+              <img
+                alt=''
+                src={"/logo-PressOnThese.svg"}
+                // onError={(this.src = "https://picsum.photos/200")}
+              />
+            </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );
