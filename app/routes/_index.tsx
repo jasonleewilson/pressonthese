@@ -1,9 +1,13 @@
-"use-client";
 import type { MetaFunction } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
-
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
+import {
+  FaXTwitter,
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+  FaHeart,
+} from "react-icons/fa6";
 
 export const meta: MetaFunction = () => {
   return [
@@ -30,9 +34,17 @@ export default function Index() {
             className='mb-4'
             // onError={(this.src = "https://picsum.photos/200")}
           />
-          <h2 className='text-center text-black'>Coming Soon...</h2>
+          <h2 className='text-center text-black mb-4'>Coming Soon... </h2>
+          <div className='text-center'>
+            <a
+              className='underline text-custom-pink hover:text-pink-800 visited:text-purple-600'
+              href='mailto:pressonthese@gmail.com'
+            >
+              pressonthese@gmail.com
+            </a>
+          </div>
           <div className='mt-4'>
-            <ul className='flex flex-wrap items-center justify-center text-3xl m-8 text-gray-900 dark:text-black'>
+            <ul className='flex flex-wrap items-center justify-center text-3xl text-gray-900 dark:text-black'>
               <li className='p-4'>
                 <Link
                   to='https://www.facebook.com/pressonthese/'
@@ -79,6 +91,23 @@ export default function Index() {
                 </Link>
               </li>
             </ul>
+
+            <div className='w-full'>
+              <p className='text-center text-gray-400 absolute bottom-0 p-4'>
+                Made with{" "}
+                <span className=' text-custom-pink inline-block'>
+                  <FaHeart />
+                </span>{" "}
+                by:{" "}
+                <Link
+                  to='https://jasonleewilson.com/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  jasonleewilson.com
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>

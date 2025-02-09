@@ -16,6 +16,9 @@ export default {
           "Noto Color Emoji",
         ],
       },
+      colors: {
+        'custom-pink':'#DAABB5',
+      }
     },
   },
   plugins: [],
