@@ -1,16 +1,17 @@
+"use-client";
 import type { MetaFunction } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa6";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "Press On These" },
-    { name: "description", content: "Welcome to PressOnThese.com!" },
+    {
+      name: "description",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. RESUABLE.",
+    },
   ];
 };
 
@@ -26,6 +27,7 @@ export default function Index() {
           <img
             alt='PressOnThese.com logo'
             src={"/logo-PressOnThese.svg"}
+            className='mb-4'
             // onError={(this.src = "https://picsum.photos/200")}
           />
           <h2 className='text-center text-black'>Coming Soon...</h2>
