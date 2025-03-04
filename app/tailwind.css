@@ -24,16 +24,16 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+  body { @apply selection:text-white selection:bg-primary; }
+  /* h1 { @apply selection:text-red-500; } */
 }
 
-:root {
+@theme {
   --color-primary: #DAABB5;
-  --color-secondary: #f000f4;
-  --dark-grey: #363636;
-  --light-blue: #6adbd8;
-  --light-grey: #d9d9d9;
-  --white: #ffffff;
-  --black: #000000;
+  --color-secondary: #efc3ca;
+  --color-blackblack: #000000;
+  --color-blacklight: #222222;
+
 }
 
 html,
@@ -55,13 +55,13 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: var(--black);
+  color: var(--color-primary);
 
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: var(--color-secondary);
 }
 
 /* selected link */

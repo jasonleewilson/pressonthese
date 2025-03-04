@@ -1,44 +1,86 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+"use client";
 
-import Logo from "~/components/Logo";
-import Social from "~/components/Social";
+import { useState } from "react";
+import Image from "~/components/Image"; // Assuming a custom Image component
+import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Press On These - Portfolio" },
-    {
-      name: "description",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. RESUABLE.",
-    },
-  ];
-};
+const images = [
+  { src: "/photos/portfolio-1.jpg", alt: "Image 1" },
+  { src: "/photos/portfolio-2.jpg", alt: "Image 2" },
+  { src: "/photos/portfolio-3.jpg", alt: "Image 3" },
+  { src: "/photos/portfolio-4.jpg", alt: "Image 4" },
+  { src: "/photos/portfolio-5.jpg", alt: "Image 5" },
 
-export default function Index() {
+  { src: "/photos/portfolio-1.jpg", alt: "Image 6" },
+  { src: "/photos/portfolio-2.jpg", alt: "Image 7" },
+  { src: "/photos/portfolio-3.jpg", alt: "Image 8" },
+  { src: "/photos/portfolio-4.jpg", alt: "Image 9" },
+  { src: "/photos/portfolio-5.jpg", alt: "Image 10" },
+];
+
+export default function Portfolio(): JSX.Element {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+
+  const closeModal = () => setIsOpen(false);
+
   return (
-    <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
-      <div className='flex flex-col items-center'>
-        <header className='flex flex-col items-center'>
-          <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
+    <>
+      <div className="flex flex-col min-h-screen bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover">
+        <Header />
+        <header className='block'>
+          <h1 className='bg-primary text-blacklight mb-4 p-4'>Portfolio</h1>
         </header>
-
-        <div className='w-auto text-center'>
-          <Logo />
-          <h2 className='text-center text-black mb-4'>Portfolio Page </h2>
-
-          <div className='text-center'>
-            {/* START CARD1 */}
-            <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-xs dark:bg-gray-800 dark:border-gray-700'>
-              <img
-                className='rounded-t-lg'
-                src='/photos/portfolio-1.jpg'
-                alt='portfolio 1'
+        <main className='container mx-auto text-black grow p-4'>
+          <div className='grid grid-cols-2 md:grid-cols-5 gap-4'>
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                width={300}
+                height={150}
+                className='cursor-pointer rounded-lg shadow-lg'
+                onClick={() => {
+                  setSelectedImage(image.src);
+                  setIsOpen(true);
+                }}
               />
-            </div>
-            {/* END CARD1 */}
+            ))}
+
+            {/* Modal */}
+            {isOpen && (
+              <div
+                className='fixed inset-0 flex items-center justify-center bg-blacklight bg-opacity-50'
+                onClick={closeModal}
+                aria-hidden='true'
+              >
+                <div
+                  className='relative bg-white p-4 rounded-lg shadow-lg'
+                  onClick={(e) => e.stopPropagation()}
+                  // aria-hidden='true'
+                >
+                  <button
+                    className='absolute top-2 right-2 text-gray-700 hover:text-gray-900'
+                    onClick={closeModal}
+                  >
+                    &times;
+                  </button>
+                  <Image
+                    src={selectedImage}
+                    alt='Selected'
+                    width={600}
+                    height={400}
+                    className='rounded-lg'
+                  />
+                </div>
+              </div>
+            )}
           </div>
-          <Social />
-        </div>
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }

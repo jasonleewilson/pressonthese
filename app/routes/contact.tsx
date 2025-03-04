@@ -13,12 +13,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function Contact() {
   return (
     <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
       <div className='flex flex-col items-center'>
         <header className='flex flex-col items-center'>
-          <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
+          <h1>Contact Page</h1>
         </header>
 
         <div className='w-auto text-center'>
