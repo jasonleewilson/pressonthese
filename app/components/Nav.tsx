@@ -24,6 +24,9 @@ export default function Nav() {
                 <a href='/portfolio'>Portfolio</a>
               </li>
               <li className='md:px-4 md:py-2 hover:text-indigo-400'>
+                <a href='/faq'>Faq</a>
+              </li>
+              <li className='md:px-4 md:py-2 hover:text-indigo-400'>
                 <a href='/contact'>Contact</a>
               </li>
             </ul>

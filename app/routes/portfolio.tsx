@@ -29,8 +29,10 @@ export default function Portfolio(): JSX.Element {
     <>
       <div className="flex flex-col min-h-screen bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover">
         <Header />
-        <header className='block'>
-          <h1 className='bg-primary text-blacklight mb-4 p-4'>Portfolio</h1>
+        <header className='block bg-lightblack'>
+          <h1 className='container mx-auto text-primary1 p-4 uppercase'>
+            Portfolio
+          </h1>
         </header>
         <main className='container mx-auto text-black grow p-4'>
           <div className='grid grid-cols-2 md:grid-cols-5 gap-4'>
@@ -52,14 +54,14 @@ export default function Portfolio(): JSX.Element {
             {/* Modal */}
             {isOpen && (
               <div
-                className='fixed inset-0 flex items-center justify-center bg-blacklight bg-opacity-50'
+                className='fixed inset-0 flex items-center justify-center bg-lightblack bg-opacity-50'
                 onClick={closeModal}
                 aria-hidden='true'
               >
                 <div
                   className='relative bg-white p-4 rounded-lg shadow-lg'
                   onClick={(e) => e.stopPropagation()}
-                  // aria-hidden='true'
+                  aria-hidden='true'
                 >
                   <button
                     className='absolute top-2 right-2 text-gray-700 hover:text-gray-900'

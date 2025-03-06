@@ -16,29 +16,32 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
-      <div className='flex flex-col items-center bg-white p-4 rounded-2xl'>
-        <header className='flex flex-col items-center'>
-          <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
-        </header>
+    <>
+      <img src='/nail.png' className='nail' width={150} alt='nail' />
+      <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
+        <div className='flex flex-col items-center bg-white p-4 rounded-2xl'>
+          <header className='flex flex-col items-center'>
+            <h1 className='sr-only'>Coming Soon... PressOnThese.com</h1>
+          </header>
 
-        <div className='w-auto text-center'>
-          <Logo />
+          <div className='w-auto text-center'>
+            <Logo />
 
-          <h2 className='text-center text-black mb-4'>Coming Soon... </h2>
-          {/* <Nav /> */}
-          <div className='text-center'>
-            <a
-              className='underline text-custom-pink hover:text-pink-800 visited:text-purple-600'
-              href='mailto:pressonthese@gmail.com'
-            >
-              pressonthese@gmail.com
-            </a>
+            <h2 className='text-center text-black mb-4'>Coming Soon... </h2>
+            {/* <Nav /> */}
+            <div className='text-center'>
+              <a
+                className='underline text-custom-pink hover:text-pink-800 visited:text-purple-600'
+                href='mailto:pressonthese@gmail.com'
+              >
+                pressonthese@gmail.com
+              </a>
+            </div>
+            <Social />
           </div>
-          <Social />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
