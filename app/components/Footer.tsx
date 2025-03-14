@@ -9,7 +9,7 @@ function Footer() {
         <Social />
         <p className='text-center text-white mb-4 h-6'>
           &copy; 2024-2025{" "}
-          <Link to='https://pressonthese.com/' target='_blank' rel='noreferrer'>
+          <Link to='https://pressonthese.com/' rel='noreferrer'>
             pressonthese.com
           </Link>
           .
