@@ -111,19 +111,19 @@ export default function Faq() {
               </AccordionTrigger>
               <AccordionContent className='bg-secondary1 p-4 text-lightblack text-2xl'>
                 <p>
-                  <strong>Sizing kit:</strong> The only way to ensure 100%
-                  accuracy that the press ons will fit is with a sizing kit that
-                  can be purchased for $7.00. This includes one of each nail in
-                  your length and shape preference.
+                  <strong>Sizing kit:</strong> The only way to ensure the
+                  closest accuracy that the press ons will fit is with a sizing
+                  kit that can be purchased for $7.00. This includes one of each
+                  nail in your length and shape preference.
                 </p>
 
                 <p>
-                  <strong>Measurements:</strong>
-                  <br />
-                  You can measure your nails from the widest part from side wall
-                  to side wall in mm. You can do this with a fabric measuring
-                  tape or by placing a piece of tape across your nail and
-                  drawing a line from the widest section of your nail.
+                  Another option is to measure your nails from the widest part
+                  from side wall to side wall in mm. You can do this with a
+                  fabric measuring tape or by placing a piece of tape across
+                  your nail and drawing a line from the widest section of your
+                  nail. You then will want to mark the edges and place the tape
+                  next to a ruler with mm and a write down the measurements.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -185,10 +185,10 @@ export default function Faq() {
                     warm water in a bowl
                   </a>
                   . Add dish soap and an oil. Example: cuticle oil, coconut oil
-                  etc. also apply cuticle oil around your press . You then will
-                  place your fingers in the warm soapy water for 10 minutes. You
-                  then should be able to use your cuticle pusher and gently pop
-                  off your press ons.
+                  etc. also apply cuticle oil around your press on. You then
+                  will place your fingers in the warm soapy water for 10
+                  minutes. You then should be able to use your cuticle pusher
+                  and gently pop off your press ons.
                 </p>
               </AccordionContent>
             </AccordionItem>
