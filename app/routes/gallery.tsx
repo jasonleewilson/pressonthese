@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { MetaFunction } from "@remix-run/cloudflare";
 import Image from "~/components/Image";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
@@ -29,6 +30,16 @@ const images = [
   { src: "/gallery/MASTER-gallery-photos-IMG_4336.jpg", alt: "Image 1" },
   { src: "/gallery/MASTER-gallery-photos-IMG_4395.jpg", alt: "Image 2" },
 ];
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Press On These - Gallery" },
+    {
+      name: "description",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. RESUABLE.",
+    },
+  ];
+};
 
 export default function Gallery(): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
