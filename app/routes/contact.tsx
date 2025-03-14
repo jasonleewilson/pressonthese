@@ -1,7 +1,6 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
-
-import Logo from "~/components/Logo";
-import Social from "~/components/Social";
+import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,28 +14,30 @@ export const meta: MetaFunction = () => {
 
 export default function Contact() {
   return (
-    <div className="flex h-screen items-center justify-center bg-[url('/bg-marble.jpg')] w-full bg-center-bottom bg-no-repeat bg-cover mb-8 md:bg-cover">
-      <div className='flex flex-col items-center'>
-        <header className='flex flex-col items-center'>
-          <h1>Contact Page</h1>
-        </header>
-
-        <div className='w-auto text-center'>
-          <Logo />
-          <h2 className='text-center text-black mb-4'>Contact Page </h2>
-
-          <div className='text-center'>
-            Email:{" "}
-            <a
-              className='underline text-custom-pink hover:text-pink-800 visited:text-purple-600'
-              href='mailto:pressonthese@gmail.com'
-            >
-              pressonthese@gmail.com
-            </a>
-          </div>
-          <Social />
-        </div>
+    <>
+      <div className='container mx-auto'>
+        <Header />
       </div>
-    </div>
+
+      <header className='block bg-lightblack'>
+        <h1 className='container mx-auto primary-font text-3xl text-primary1 p-4 uppercase'>
+          Contact{" "}
+          {/* <img src='/nail.png' className='nail' width={150} alt='nail' /> */}
+        </h1>
+      </header>
+      <main className='container mx-auto primary-font text-black grow p-4'>
+        <div className='text-center text-2xl rounded-[1vw] p-8'>
+          Email:{" "}
+          <a
+            className='underline text-black hover:text-white visited:text-purple-600'
+            href='mailto:pressonthese@gmail.com'
+          >
+            pressonthese@gmail.com
+          </a>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }

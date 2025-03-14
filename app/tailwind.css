@@ -43,40 +43,49 @@
   --color-secondary1: #efc3ca;
   --color-lightblack: #222222;
 
+  /* monocromatic */
+  --color-primary1-50: #ffdae4;
+  --color-primary1-150: #ffd0da;
+  --color-primary1-250: #f5c6d0;
+  --color-primary1-350: #ebbcc6;
+  --color-primary1-450: #e2b3bd;
+  --color-primary1-550: #d8a9b3;
+  --color-primary1-650: #ce9fa9;
+  --color-primary1-750: #c4959f;
+  --color-primary1-850: #ba8b95;
+  --color-primary1-950: #b0818b;
+
 }
 
 html,
 body {
   color: var(--light-grey);
   background-color: var(--dark-grey);
-  /* @apply bg-white dark:bg-gray-950;
+  @apply bg-secondary1 dark:bg-gray-950;
+  /* @apply bg-white dark:bg-gray-950; */
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
-  } */
+  }
 }
 
-/* unvisited link */
-a:link {
-  /* color: red; */
-  color: var(--color-primary);
+.primary-font {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
-/* visited link */
-a:visited {
-  color: var(--color-primary);
-
+.secondary-font {
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-/* mouse over link */
-a:hover {
-  color: var(--color-secondary);
-}
 
-/* selected link */
-a:active {
-  color: var(--color-lightblack);
-}
+/* a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+} */
 
 .logo {
   color: var(--light-blue);
@@ -87,10 +96,16 @@ a:active {
   color: var(--light-grey)
 }
 
-.nail {width: 20%;
+.text-custom-homepage {
+  font-size: 16rem;
+  line-height: 0.8;
+  overflow-wrap: break-word;
+}
+
+.nail {width: 100px;
   position: absolute;
   right: 0;
-  top: -120px;}
+  top: -100px;}
 
   @media only screen and (max-width: 420px) {
     .nail {

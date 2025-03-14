@@ -21,7 +21,7 @@ export default function Nav() {
                 <a href='/about'>About</a>
               </li>
               <li className='md:px-4 md:py-2 hover:text-indigo-400'>
-                <a href='/portfolio'>Portfolio</a>
+                <a href='/gallery'>Gallery</a>
               </li>
               <li className='md:px-4 md:py-2 hover:text-indigo-400'>
                 <a href='/faq'>Faq</a>

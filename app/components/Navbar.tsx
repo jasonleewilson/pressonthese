@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import Logo from "./Logo";
+import { Link } from "@remix-run/react";
+
+// import Link from "@remix-run/cloudflare";
 
 const Navbar = () => {
   useEffect(() => {
@@ -34,45 +36,48 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='container mx-auto'>
+      <div className=''>
         <nav className='navbar'>
-          <div className='grid grid-cols-4'>
-            <div className='col-span-2 sm:col-span-3 md:col-span-1'>
-              <Logo />
-            </div>
-            <div className='col-span-2 sm:col-span-1 md:col-span-3 p-5'>
-              <div className='navbar-menu inline md:hidden'>
-                <button className='navbar-burger text-5xl'>☰</button>
-              </div>
-              <div className='navbar-menu hidden md:inline'>
-                <button className='navbar-close text-5xl inline md:hidden'>
-                  ✖
-                </button>
-                <div className='navbar-backdrop'></div>
-                {/* Menu items go here */}
-                <ul className='flex font-semibold flex-row items-center justify-center'>
-                  {/* <!-- Active Link = text-indigo-500
-                Inactive Link = hover:text-indigo-500 --> */}
-                  <li className='md:px-4 md:py-2 text-indigo-500'>
-                    <a href='/'>Home</a>
-                  </li>
-                  <li className='md:px-4 md:py-2 hover:text-indigo-400'>
-                    <a href='/about'>About</a>
-                  </li>
-                  <li className='md:px-4 md:py-2 hover:text-indigo-400'>
-                    <a href='/portfolio'>Portfolio</a>
-                  </li>
-                  <li className='md:px-4 md:py-2 hover:text-indigo-400'>
-                    <a href='/faq'>Faq</a>
-                  </li>
-                  <li className='md:px-4 md:py-2 hover:text-indigo-400'>
-                    <a href='/contact'>Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className='navbar-menu flex align-items justify-end md:hidden'>
+            <button className='navbar-burger text-5xl'>☰</button>
           </div>
         </nav>
+        <div className='navbar-menu hidden md:inline'>
+          <div className='flex'>
+            <button className='navbar-close text-5xl ml-auto md:hidden'>
+              ✖
+            </button>
+          </div>
+
+          <div className='navbar-backdrop'></div>
+
+          {/* Menu items go here */}
+          <ul className='grid mt-8 primary-font font-semibold text-2xl md:flex md:m-0 justify-end text-right'>
+            <li className='text-black hover:text-white uppercase'>
+              <Link to='/about' aria-label='about' className='px-2'>
+                about
+              </Link>
+            </li>
+
+            <li className='text-black hover:text-white uppercase'>
+              <Link to='/gallery' aria-label='gallery' className='px-2'>
+                gallery
+              </Link>
+            </li>
+
+            <li className='text-black hover:text-white uppercase'>
+              <Link to='/faq' aria-label='faq' className='px-2'>
+                faq
+              </Link>
+            </li>
+
+            <li className='text-black hover:text-white uppercase'>
+              <Link to='/contact' aria-label='contact' className='px-2'>
+                contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
