@@ -7,6 +7,8 @@ export default function Logo() {
         <img
           src={"/PressOnThese-logo-final.svg"}
           alt='PressOnThese.com logo'
+          width={260}
+          height={64}
           // onError={(this.src = "https://picsum.photos/200")}
         />
       </Link>

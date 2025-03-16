@@ -8,11 +8,15 @@ function Footer() {
       <footer className='p-4'>
         <Social />
         <p className='text-center text-white mb-4 h-6'>
-          &copy; 2024-2025{" "}
-          <Link to='https://pressonthese.com/' rel='noreferrer'>
+          &copy;{" "}
+          <Link
+            to='https://pressonthese.com/'
+            className='uppercase'
+            rel='noreferrer'
+          >
             pressonthese.com
-          </Link>
-          .
+          </Link>{" "}
+          2024-2025.
         </p>
         <p className='text-center text-white h-6'>
           Made with <FaHeart className='inline-block' /> by:{" "}

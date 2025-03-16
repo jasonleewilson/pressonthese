@@ -11,6 +11,7 @@ export default function Social() {
             to='https://www.facebook.com/pressonthese/'
             className='text-white hover:text-primary1'
             target='_blank'
+            aria-label='Social link to Facebook'
             rel='noreferrer'
           >
             <FaFacebookF />
@@ -21,6 +22,7 @@ export default function Social() {
             to='https://x.com/pressonthese/'
             className='text-white hover:text-primary1'
             target='_blank'
+            aria-label='Social link to X'
             rel='noreferrer'
           >
             <FaXTwitter />
@@ -31,6 +33,7 @@ export default function Social() {
             to='https://www.instagram.com/pressonthese/'
             className='text-white hover:text-primary1'
             target='_blank'
+            aria-label='Social link to Instagram'
             rel='noreferrer'
           >
             <FaInstagram />
@@ -41,6 +44,7 @@ export default function Social() {
             to='https://www.tiktok.com/@pressonthese/'
             className='text-white hover:text-primary1'
             target='_blank'
+            aria-label='Social link to Tiktok'
             rel='noreferrer'
           >
             <FaTiktok />
@@ -51,6 +55,7 @@ export default function Social() {
             to='https://youtube.com/@pressonthese/'
             className='text-white hover:text-primary1'
             target='_blank'
+            aria-label='Social link to YouTube'
             rel='noreferrer'
           >
             <FaYoutube />
