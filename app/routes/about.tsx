@@ -53,7 +53,7 @@ export default function About() {
       <div className=''>
         <header className='block bg-lightblack'>
           <h1 className='container mx-auto primary-font text-3xl text-primary1 p-4 uppercase'>
-            About
+            About - Staging
             {/* <img src='/nail.png' className='nail' width={150} alt='nail' /> */}
           </h1>
         </header>
