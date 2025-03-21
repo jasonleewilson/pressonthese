@@ -36,7 +36,7 @@ export const meta: MetaFunction = () => {
     { title: "Press On These - Gallery" },
     {
       name: "description",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. RESUABLE.",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
     },
     {
       property: "og:description",
