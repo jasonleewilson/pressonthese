@@ -8,11 +8,11 @@ export const meta: MetaFunction = () => {
     { title: "Press On These" },
     {
       name: "description",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. .REUSABLE.",
     },
     {
       property: "og:title",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. .REUSABLE.",
     },
     {
       property: "og:description",
