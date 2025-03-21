@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
     { title: "Press On These - About" },
     {
       name: "description",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. RESUABLE.",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
     },
     {
       property: "og:description",
@@ -53,7 +53,7 @@ export default function About() {
       <div className=''>
         <header className='block bg-lightblack'>
           <h1 className='container mx-auto primary-font text-3xl text-primary1 p-4 uppercase'>
-            About - Staging
+            About
             {/* <img src='/nail.png' className='nail' width={150} alt='nail' /> */}
           </h1>
         </header>
