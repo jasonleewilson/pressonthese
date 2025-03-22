@@ -8,7 +8,7 @@ export const meta: MetaFunction = () => {
     { title: "Press On These" },
     {
       name: "description",
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. .REUSABLE.",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. REUSABLE.",
     },
   ];
 };
@@ -33,7 +33,7 @@ export default function Homepage() {
 
           {/* <!-- Subheadline --> */}
           <h2 className='col-span-1 md:col-span-2 text-xl text-gray-500'>
-            DURABLE. .REUSABLE. Designed Just for You. Experience salon-quality
+            DURABLE. REUSABLE. Designed Just for You. Experience salon-quality
             nails without the hassle!
           </h2>
 
