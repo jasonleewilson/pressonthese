@@ -7,7 +7,11 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 
 const images = [
-  { src: "/gallery/MASTER-gallery-photos-IMG_3200.jpg", alt: "Image 1" },
+  {
+    src: "/gallery/MASTER-gallery-photos-IMG_3200.jpg",
+    alt: "Image 1",
+    // title: "test-title1",
+  },
   { src: "/gallery/MASTER-gallery-photos-IMG_3225.jpg", alt: "Image 2" },
   { src: "/gallery/MASTER-gallery-photos-IMG_3246.jpg", alt: "Image 3" },
   { src: "/gallery/MASTER-gallery-photos-IMG_3300.jpg", alt: "Image 4" },
@@ -17,18 +21,33 @@ const images = [
   { src: "/gallery/MASTER-gallery-photos-IMG_3484.jpg", alt: "Image 8" },
   { src: "/gallery/MASTER-gallery-photos-IMG_3508.jpg", alt: "Image 9" },
   { src: "/gallery/MASTER-gallery-photos-IMG_3611.jpg", alt: "Image 10" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_3660.jpg", alt: "Image 1" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_3685.jpg", alt: "Image 2" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_3770.jpg", alt: "Image 3" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_3967.jpg", alt: "Image 4" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4014.jpg", alt: "Image 5" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4024.jpg", alt: "Image 6" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4224.jpg", alt: "Image 7" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4264.jpg", alt: "Image 8" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4304.jpg", alt: "Image 9" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4312.jpg", alt: "Image 10" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4336.jpg", alt: "Image 1" },
-  { src: "/gallery/MASTER-gallery-photos-IMG_4395.jpg", alt: "Image 2" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_3660.jpg", alt: "Image 11" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_3685.jpg", alt: "Image 12" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_3770.jpg", alt: "Image 13" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_3967.jpg", alt: "Image 14" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4014.jpg", alt: "Image 15" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4024.jpg", alt: "Image 16" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4224.jpg", alt: "Image 17" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4264.jpg", alt: "Image 18" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4304.jpg", alt: "Image 19" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4312.jpg", alt: "Image 20" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4336.jpg", alt: "Image 21" },
+  { src: "/gallery/MASTER-gallery-photos-IMG_4395.jpg", alt: "Image 22" },
+  //April 2025
+  { src: "/gallery/april/IMG_4524.jpg", alt: "Image 23" },
+  { src: "/gallery/april/IMG_4622.jpg", alt: "Image 24" },
+  { src: "/gallery/april/IMG_4664.jpg", alt: "Image 25" },
+  { src: "/gallery/april/IMG_4726.jpg", alt: "Image 26" },
+  { src: "/gallery/april/IMG_4731.jpg", alt: "Image 27" },
+  { src: "/gallery/april/IMG_4755.jpg", alt: "Image 28" },
+  { src: "/gallery/april/IMG_4757.jpg", alt: "Image 29" },
+  { src: "/gallery/april/IMG_4879.jpg", alt: "Image 30" },
+  { src: "/gallery/april/IMG_4917.jpg", alt: "Image 31" },
+  { src: "/gallery/april/IMG_4991.jpg", alt: "Image 32" },
+  { src: "/gallery/april/IMG_5017.jpg", alt: "Image 33" },
+  { src: "/gallery/april/IMG_5179.jpg", alt: "Image 34" },
+  { src: "/gallery/april/IMG_5214.jpg", alt: "Image 35" },
+  { src: "/gallery/april/IMG_5249.jpg", alt: "Image 36" },
 ];
 
 export const meta: MetaFunction = () => {
@@ -96,10 +115,11 @@ export default function Gallery(): JSX.Element {
               key={index}
               src={image.src}
               alt={image.alt}
-              aria-label={image.title}
+              // aria-label={image.title}
+              // loading={image.title}
               width={300}
               height={150}
-              className='cursor-pointer rounded-lg shadow-lg'
+              className='cursor-pointer no-right-click rounded-lg shadow-lg'
               onClick={() => {
                 setSelectedImage(image.src);
                 setIsOpen(true);

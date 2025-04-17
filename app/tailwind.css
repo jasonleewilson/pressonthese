@@ -102,6 +102,10 @@ body {
   overflow-wrap: break-word;
 }
 
+/* .no-right-click {
+  pointer-events: none;
+} */
+
 .nail {width: 100px;
   position: absolute;
   right: 0;
