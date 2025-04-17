@@ -48,6 +48,8 @@ const images = [
   { src: "/gallery/april/IMG_5179.jpg", alt: "Image 34" },
   { src: "/gallery/april/IMG_5214.jpg", alt: "Image 35" },
   { src: "/gallery/april/IMG_5249.jpg", alt: "Image 36" },
+  { src: "/gallery/april/IMG_4425.jpg", alt: "Image 37" },
+  { src: "/gallery/april/IMG_4465.jpg", alt: "Image 38" },
 ];
 
 export const meta: MetaFunction = () => {
