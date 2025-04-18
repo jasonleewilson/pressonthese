@@ -102,7 +102,7 @@ export default function Gallery(): JSX.Element {
 
   return (
     <>
-      <div className='container mx-auto '>
+      <div className='container mx-auto'>
         <Header />
       </div>
       <header className='block bg-lightblack'>
@@ -121,7 +121,7 @@ export default function Gallery(): JSX.Element {
               // loading={image.title}
               width={300}
               height={150}
-              className='cursor-pointer no-right-click rounded-lg shadow-lg'
+              className='cursor-pointer no-right-click rounded-lg outline-0 hover:outline-black hover:outline-2 shadow-lg hover:shadow-none transition duration-300'
               onClick={() => {
                 setSelectedImage(image.src);
                 setIsOpen(true);
