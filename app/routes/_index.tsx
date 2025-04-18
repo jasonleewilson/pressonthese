@@ -83,14 +83,24 @@ export default function Index() {
             <br />
             <br />
             {/* <!-- Call to Action --> */}
-            <a
-              href='/gallery'
-              className='bg-primary1 primary-font text-black inline p-4 text-lg font-semibold hover:bg-secondary1 transition-all focus:ring-4 focus:ring-pink-300 focus:outline-none'
-              role='button'
-              aria-label='View Gallery - Find Your Perfect Set'
-            >
-              View Gallery
-            </a>
+            <div className='flex'>
+              <a
+                href='/gallery'
+                className='bg-white primary-font text-black inline m-1 p-4 text-lg font-semibold hover:bg-gray-100 transition-all focus:ring-4 focus:ring-pink-300 focus:outline-none'
+                role='button'
+                aria-label='View Gallery - Find Your Perfect Set'
+              >
+                View Gallery
+              </a>
+              <a
+                href='/contact'
+                className='bg-transparent outline-1 outline-white primary-font text-black inline m-1 p-4 text-lg font-semibold hover:bg-gray-100 transition-all focus:ring-4 focus:ring-pink-300 focus:outline-none'
+                role='button'
+                aria-label='View Gallery - Find Your Perfect Set'
+              >
+                Contact Me
+              </a>
+            </div>
           </p>
 
           {/* <!-- Subheadline --> */}

@@ -1,7 +1,6 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
-import ContactForm from "~/components/ContactForm";
 
 export const meta: MetaFunction = () => {
   return [
@@ -59,8 +58,6 @@ export default function Contact() {
         </h1>
       </header>
       <main className='container mx-auto primary-font text-black grow p-4'>
-        <ContactForm />
-        {/* Email address only */}
         <div className='text-center text-2xl rounded-[1vw] p-8'>
           Email:{" "}
           <a
