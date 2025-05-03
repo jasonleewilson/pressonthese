@@ -27,6 +27,7 @@ const Image: FC<ImageProps> = ({
       height={height}
       className={className}
       onClick={onClick}
+      loading='lazy'
     />
   );
 };
