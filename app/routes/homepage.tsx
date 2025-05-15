@@ -8,11 +8,7 @@ export const meta: MetaFunction = () => {
     { title: "Press On These" },
     {
       name: "description",
-<<<<<<< HEAD
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
-=======
       content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. REUSABLE.",
->>>>>>> master
     },
   ];
 };
