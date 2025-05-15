@@ -1,33 +1,13 @@
-"use client";
-
-import { useState } from "react";
 import type { MetaFunction } from "@remix-run/cloudflare";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 
-import Lightbox from "yet-another-react-lightbox";
-import { slides } from "../data";
-import "yet-another-react-lightbox/styles.css";
-import {
-  // Captions,
-  Fullscreen,
-  Thumbnails,
-  Zoom,
-} from "yet-another-react-lightbox/plugins";
-import "yet-another-react-lightbox/plugins/captions.css";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Images from "../Images";
-
 export const meta: MetaFunction = () => {
   return [
-    { title: "Press On These - Gallery" },
+    { title: "Press On These - Contact" },
     {
       name: "description",
-<<<<<<< HEAD
-      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
-=======
       content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. REUSABLE.",
->>>>>>> master
     },
     {
       property: "og:description",
@@ -40,7 +20,7 @@ export const meta: MetaFunction = () => {
     },
     {
       property: "og:url",
-      content: "https://pressonthese.com/gallery",
+      content: "https://pressonthese.com/contact",
     },
     {
       property: "og:site_name",
@@ -64,41 +44,32 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-function Gallery() {
-  // const [open, setOpen] = useState<boolean>(false);
-  const [index, setIndex] = useState<number>(-1);
-
+export default function Contact() {
   return (
     <>
       <div className='container mx-auto'>
         <Header />
       </div>
+
       <header className='block bg-lightblack'>
         <h1 className='container mx-auto primary-font text-3xl text-primary1 p-4 uppercase'>
-          Gallery
+          Contact{" "}
+          {/* <img src='/nail.png' className='nail' width={150} alt='nail' /> */}
         </h1>
       </header>
-      <main className='container mx-auto text-black grow p-4'>
-        <Images
-          data={slides}
-          onClick={(currentIndex) => setIndex(currentIndex)}
-        />
-
-        <Lightbox
-          plugins={[Fullscreen, Zoom, Thumbnails]}
-          captions={{
-            showToggle: true,
-            descriptionTextAlign: "end",
-          }}
-          index={index}
-          open={index >= 0}
-          close={() => setIndex(-1)}
-          slides={slides}
-        />
+      <main className='container mx-auto primary-font text-black grow p-4'>
+        <div className='text-center text-2xl rounded-[1vw] p-8'>
+          Email:{" "}
+          <a
+            className='underline text-black hover:text-white visited:text-purple-600'
+            href='mailto:pressonthese@gmail.com'
+          >
+            pressonthese@gmail.com
+          </a>
+        </div>
       </main>
+
       <Footer />
     </>
   );
 }
-
-export default Gallery;

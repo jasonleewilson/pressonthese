@@ -1,13 +1,18 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
+import ContactForm from "~/components/ContactForm";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "Press On These - Contact" },
     {
       name: "description",
+<<<<<<< HEAD
       content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. reusable.",
+=======
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. REUSABLE.",
+>>>>>>> master
     },
     {
       property: "og:description",
@@ -58,6 +63,8 @@ export default function Contact() {
         </h1>
       </header>
       <main className='container mx-auto primary-font text-black grow p-4'>
+        <ContactForm />
+        {/* Email address only */}
         <div className='text-center text-2xl rounded-[1vw] p-8'>
           Email:{" "}
           <a
