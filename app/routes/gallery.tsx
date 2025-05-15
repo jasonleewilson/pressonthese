@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from "react";
+import type { MetaFunction } from "@remix-run/cloudflare";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 
@@ -14,6 +17,48 @@ import {
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Images from "../Images";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Press On These - Gallery" },
+    {
+      name: "description",
+      content: "PRESSONTHESE.COM - HANDMADE. CUSTOM. DURABLE. REUSABLE.",
+    },
+    {
+      property: "og:description",
+      content:
+        "Express yourself with handmade, custom press-on nails created by me for you.",
+    },
+    {
+      property: "og:image",
+      content: "/og-pressonthese.jpg",
+    },
+    {
+      property: "og:url",
+      content: "https://pressonthese.com/gallery",
+    },
+    {
+      property: "og:site_name",
+      content: "Press On These",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon-96x96.png",
+      sizes: "96x96",
+    },
+    { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+    { rel: "shortcut icon", href: "/favicon.ico" },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/apple-touch-icon.png",
+    },
+    { name: "apple-mobile-web-app-title", content: "PressOn" },
+    { rel: "manifest", href: "/site.webmanifest" },
+  ];
+};
 
 function Gallery() {
   // const [open, setOpen] = useState<boolean>(false);
