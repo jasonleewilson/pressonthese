@@ -378,3 +378,15 @@ body {
   object-fit: cover;
   border-radius: 8px;
 } */
+
+
+/* lightbox custom colors */
+.yarl__slide.yarl__slide_current.yarl__flex_center, .yarl__thumbnails_container.yarl__flex_center, .yarl__flex_center.yarl__thumbnails_thumbnail, .yarl__container.yarl__flex_center {
+background-color: #DAABB5;
+}
+
+.yarl__thumbnails_vignette {display: none;}
+
+.yarl__flex_center.yarl__thumbnails_thumbnail {
+border-color: transparent;
+}
