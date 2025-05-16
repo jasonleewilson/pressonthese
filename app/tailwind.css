@@ -390,3 +390,7 @@ background-color: #DAABB5;
 .yarl__flex_center.yarl__thumbnails_thumbnail {
 border-color: transparent;
 }
+
+.yarl__flex_center.yarl__thumbnails_thumbnail {
+width: auto;
+}
